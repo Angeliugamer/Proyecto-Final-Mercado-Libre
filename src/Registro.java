@@ -2,9 +2,8 @@
 
 
 public class Registro extends javax.swing.JFrame {
-    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Registro.class.getName());
-
+    
     public Registro() {
         initComponents();
         setLocationRelativeTo(null);
@@ -25,31 +24,27 @@ public class Registro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText(" contraseña");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, -1, 27));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 337, -1, 27));
 
-        txtNuevaPassword.setBackground(new java.awt.Color(255, 255, 255));
         txtNuevaPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNuevaPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(txtNuevaPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 170, 30));
+        jPanel1.add(txtNuevaPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 365, 170, 30));
 
-        txtNuevoUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtNuevoUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNuevoUsuarioActionPerformed(evt);
             }
         });
-        jPanel1.add(txtNuevoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 180, 30));
+        jPanel1.add(txtNuevoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 299, 170, 30));
 
         btnLogin.setBackground(new java.awt.Color(0, 255, 153));
-        btnLogin.setForeground(new java.awt.Color(0, 0, 0));
         btnLogin.setText("Registrar");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,9 +53,8 @@ public class Registro extends javax.swing.JFrame {
         });
         jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 603, -1, 40));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("nuevo usuario");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 80, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 275, 80, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/registro.png"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
@@ -91,17 +85,28 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNuevoUsuarioActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-
-        String user = txtNuevoUsuario.getText();
+    String user = txtNuevoUsuario.getText();
     String pass = txtNuevaPassword.getText();
+
+    if (user.isEmpty() || pass.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No se permiten campos vacíos");
+        return;
+    }
+    if (!user.matches("[a-zA-Z0-9_]+")) {
+        javax.swing.JOptionPane.showMessageDialog(this, "El usuario solo puede tener letras, números y _");
+        return;
+    }
+    if (pass.length() < 6) {
+        javax.swing.JOptionPane.showMessageDialog(this, "La contraseña debe tener mínimo 6 caracteres");
+        return;
+    }
 
     Login.usuarios.add(user);
     Login.contraseñas.add(pass);
 
     javax.swing.JOptionPane.showMessageDialog(this, "Usuario registrado");
-     new Login().setVisible(true);
+    new Login().setVisible(true);
     this.dispose(); 
-
     }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
