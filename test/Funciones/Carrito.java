@@ -1,3 +1,5 @@
+package Funciones;
+
 
 public class Carrito {
     Nodo cabeza;

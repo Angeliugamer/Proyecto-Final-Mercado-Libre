@@ -1,3 +1,5 @@
+package Funciones;
+
 
 
 public class Nodo {

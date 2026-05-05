@@ -1,3 +1,5 @@
+package Funciones;
+
 import java.util.ArrayList;
 
 public class MenuUsuario extends javax.swing.JFrame {

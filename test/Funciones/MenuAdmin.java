@@ -1,3 +1,5 @@
+package Funciones;
+
 
 public class MenuAdmin extends javax.swing.JFrame {
     
