@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="593.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GGStore.LoginFXController">
+<StackPane prefHeight="593.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Start.RegistroFXController">
    <children>
       <Pane prefHeight="593.0" prefWidth="663.0">
          <children>
             <ImageView fitHeight="593.0" fitWidth="663.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Img/Shared/1%20Registro/FLogin.png" />
+                  <Image url="@../img/Shared/1%20Registro/FRegistro.png" />
                </image>
             </ImageView>
             <TextField layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: translucent;">
@@ -28,17 +28,12 @@
                   <Font name="Open Sans Medium" size="12.0" />
                </font>
             </PasswordField>
-            <Button fx:id="btnRegistrar" layoutX="366.0" layoutY="354.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Registrar">
+            <Button fx:id="btnRegistrar" layoutX="443.0" layoutY="354.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Registrar">
                <font>
                   <Font name="Montserrat Black" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="btnIniciar" layoutX="515.0" layoutY="354.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Iniciar">
-               <font>
-                  <Font name="Montserrat Black" size="12.0" />
-               </font>
-            </Button>
-      <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="593.0" prefWidth="663.0" style="-fx-background-color: black;" />
+                <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="593.0" prefWidth="663.0" style="-fx-background-color: black;" />
             <ImageView fx:id="iconMoon" fitHeight="47.0" fitWidth="43.0" layoutX="620.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Img/Icons/MoonStars.png" />
