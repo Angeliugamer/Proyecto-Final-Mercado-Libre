@@ -18,12 +18,12 @@
                   <Image url="@../Img/Shared/1%20Registro/FLogin.png" />
                </image>
             </ImageView>
-            <TextField layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: translucent;">
+            <TextField layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: transparent;">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="376.0" layoutY="292.0" prefHeight="31.0" prefWidth="190.0" promptText="Password" style="-fx-cursor: hand; -fx-background-color: translucent;">
+            <PasswordField layoutX="376.0" layoutY="292.0" prefHeight="31.0" prefWidth="190.0" promptText="Password" style="-fx-cursor: hand; -fx-background-color: transparent;">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font>
@@ -39,11 +39,11 @@
                </font>
             </Button>
                 <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="593.0" prefWidth="663.0" style="-fx-background-color: black;" />
-            <ImageView fx:id="iconMoon" fitHeight="47.0" fitWidth="43.0" layoutX="620.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Img/Icons/MoonStars.png" />
-               </image>
-            </ImageView>
+                    <ImageView fx:id="iconMoon" fitHeight="47.0" fitWidth="43.0" layoutX="620.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Img/Icons/MoonStars.png" />
+                        </image>
+                    </ImageView>
             <Button fx:id="btnDarkOff" layoutX="619.0" layoutY="549.0" onAction="#cambiarModo" prefHeight="43.0" prefWidth="43.0" style="-fx-background-color: transparent;" text="   " />
          </children>
       </Pane>

@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package Start;
 
 import javafx.fxml.FXML;
@@ -22,7 +18,7 @@ public class RegistroFXController {
             overlay.setOpacity(0.5); // oscurece
 
             iconMoon.setImage(new Image(
-                getClass().getResource("/Img/Icons/Sun.png").toExternalForm()
+                getClass().getResource("/img/Icons/Sun.png").toExternalForm()
             ));
 
             modoNoche = true;
@@ -31,7 +27,7 @@ public class RegistroFXController {
             overlay.setOpacity(0.0);
 
             iconMoon.setImage(new Image(
-                getClass().getResource("/Img/Icons/MoonStars.png").toExternalForm()
+                getClass().getResource("/img/Icons/MoonStars.png").toExternalForm()
             ));
 
             modoNoche = false;

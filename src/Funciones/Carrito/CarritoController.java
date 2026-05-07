@@ -1,12 +1,11 @@
-
-package Start;
+package Funciones.Carrito;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 
-public class LoginFXController {
+public class CarritoController {
     @FXML
     private Pane overlay;
     @FXML
@@ -19,7 +18,7 @@ public class LoginFXController {
             overlay.setOpacity(0.5); // oscurece
 
             iconMoon.setImage(new Image(
-                getClass().getResource("/Img/Icons/Sun.png").toExternalForm()
+                getClass().getResource("/img/Icons/Sun.png").toExternalForm()
             ));
 
             modoNoche = true;
@@ -28,7 +27,7 @@ public class LoginFXController {
             overlay.setOpacity(0.0);
 
             iconMoon.setImage(new Image(
-                getClass().getResource("/Img/Icons/MoonStars.png").toExternalForm()
+                getClass().getResource("/img/Icons/MoonStars.png").toExternalForm()
             ));
 
             modoNoche = false;
