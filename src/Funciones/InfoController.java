@@ -1,11 +1,11 @@
-package Funciones.Carrito;
+package Funciones;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 
-public class CarritoController {
+public class InfoController{
     @FXML
     private Pane overlay;
     @FXML
@@ -34,3 +34,4 @@ public class CarritoController {
         }
     }
 }
+

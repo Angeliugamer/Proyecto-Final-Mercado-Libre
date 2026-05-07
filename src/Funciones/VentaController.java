@@ -1,26 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package Funciones;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 
-/**
- * FXML Controller class
- *
- * @author LOGIN
- */
-public class VentaController implements Initializable {
+public class VentaController{
+    @FXML
+    private Pane overlay;
+    @FXML
+    private ImageView iconMoon;
+    private boolean modoNoche = false;
+    @FXML
+    private void cambiarModo() {
+        if (!modoNoche) {
+            // ACTIVAR modo noche
+            overlay.setOpacity(0.3); // oscurece
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+            iconMoon.setImage(new Image(
+                getClass().getResource("/img/Icons/Sun.png").toExternalForm()
+            ));
+
+            modoNoche = true;
+        } else {
+            // VOLVER a modo día
+            overlay.setOpacity(0.0);
+
+            iconMoon.setImage(new Image(
+                getClass().getResource("/img/Icons/MoonStars.png").toExternalForm()
+            ));
+
+            modoNoche = false;
+        }
+    }
 }
+

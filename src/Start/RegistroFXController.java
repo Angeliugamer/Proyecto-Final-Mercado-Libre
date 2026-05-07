@@ -15,7 +15,7 @@ public class RegistroFXController {
     private void cambiarModo() {
         if (!modoNoche) {
             // ACTIVAR modo noche
-            overlay.setOpacity(0.5); // oscurece
+            overlay.setOpacity(0.3); // oscurece
 
             iconMoon.setImage(new Image(
                 getClass().getResource("/img/Icons/Sun.png").toExternalForm()
