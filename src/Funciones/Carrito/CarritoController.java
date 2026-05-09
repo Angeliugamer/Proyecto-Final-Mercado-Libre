@@ -1,5 +1,6 @@
 package Funciones.Carrito;
 
+import Start.ConfiguracionGeneral;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -10,27 +11,29 @@ public class CarritoController {
     private Pane overlay;
     @FXML
     private ImageView iconMoon;
-    private boolean modoNoche = false;
     @FXML
     private void cambiarModo() {
-        if (!modoNoche) {
-            // ACTIVAR modo noche
-            overlay.setOpacity(0.3); // oscurece
-
+        if (!ConfiguracionGeneral.modoNoche) {
+            overlay.setOpacity(0.3);
             iconMoon.setImage(new Image(
                 getClass().getResource("/img/Icons/Sun.png").toExternalForm()
             ));
-
-            modoNoche = true;
+            ConfiguracionGeneral.modoNoche = true;
         } else {
-            // VOLVER a modo día
             overlay.setOpacity(0.0);
-
             iconMoon.setImage(new Image(
                 getClass().getResource("/img/Icons/MoonStars.png").toExternalForm()
             ));
-
-            modoNoche = false;
+            ConfiguracionGeneral.modoNoche = false;
+        }
+    }
+    @FXML
+    public void initialize() {
+        if (ConfiguracionGeneral.modoNoche) {
+            overlay.setOpacity(0.3);
+            iconMoon.setImage(new Image(
+                getClass().getResource("/img/Icons/Sun.png").toExternalForm()
+            ));
         }
     }
 }

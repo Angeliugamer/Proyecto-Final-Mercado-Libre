@@ -18,17 +18,22 @@
                   <Image url="@../img/Shared/1%20Registro/FRegistro.png" />
                </image>
             </ImageView>
-            <TextField layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: transparent;">
+            <TextField fx:id="txtUsuario" layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: transparent;">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="376.0" layoutY="292.0" prefHeight="31.0" prefWidth="190.0" promptText="Password" style="-fx-cursor: hand; -fx-background-color: transparent;">
+            <PasswordField fx:id="txtPassword" layoutX="376.0" layoutY="292.0" prefHeight="31.0" prefWidth="190.0" promptText="Password" style="-fx-cursor: hand; -fx-background-color: transparent;">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font>
             </PasswordField>
-            <Button fx:id="btnRegistrar" layoutX="443.0" layoutY="354.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Registrar">
+            <Button fx:id="btnIniciar" layoutX="366.0" layoutY="354.0"  mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="regresar" onAction="#regresar">
+               <font>
+                  <Font name="Montserrat Black" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRegistrar" layoutX="515.0" layoutY="354.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Registrar" onAction="#registrar">
                <font>
                   <Font name="Montserrat Black" size="12.0" />
                </font>
