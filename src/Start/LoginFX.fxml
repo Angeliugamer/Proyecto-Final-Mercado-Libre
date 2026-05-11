@@ -18,12 +18,12 @@
                   <Image url="@../Img/Shared/1%20Registro/FLogin.png" />
                </image>
             </ImageView>
-            <TextField layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: transparent;">
+            <TextField layoutX="376.0" layoutY="216.0" prefHeight="31.0" prefWidth="190.0" promptText="Usser" style="-fx-cursor: hand; -fx-background-color: transparent;" fx:id="txtUsuario">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="376.0" layoutY="292.0" prefHeight="31.0" prefWidth="190.0" promptText="Password" style="-fx-cursor: hand; -fx-background-color: transparent;">
+            <PasswordField layoutX="376.0" layoutY="292.0" prefHeight="31.0" prefWidth="190.0" promptText="Password" style="-fx-cursor: hand; -fx-background-color: transparent;" fx:id="txtPassword">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font>

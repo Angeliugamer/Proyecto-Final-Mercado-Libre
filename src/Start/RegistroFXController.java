@@ -78,10 +78,15 @@ public class RegistroFXController {
             return;
         }
 
-        Start.UsuariosData.usuarios.add(user);
-        Start.UsuariosData.contraseñas.add(pass);
+        Start.UsuariosData.guardarUsuario(user, pass);
 
-        System.out.println("Usuario registrado");
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+
+        alerta.setTitle("Mensaje");
+        alerta.setHeaderText(null);
+        alerta.setContentText("Usuario registrado");
+
+        alerta.showAndWait();
 
         Parent root = FXMLLoader.load(
             getClass().getResource("/Start/LoginFX.fxml")
