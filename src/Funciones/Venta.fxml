@@ -42,6 +42,11 @@
                         <Image url="@../img/Shared/2%20Venta/FProducto.png" />
                      </image>
                   </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icons/Image.png" />
+                     </image>
+                  </ImageView>
                   <ImageView fx:id="imvLike" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/ThumbsUp.png" />
@@ -73,6 +78,11 @@
                   <ImageView fitHeight="442.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Shared/2%20Venta/FProducto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icons/Image.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="imvLike1" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
@@ -109,6 +119,11 @@
                         <Image url="@../img/Shared/2%20Venta/FProducto.png" />
                      </image>
                   </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icons/Image.png" />
+                     </image>
+                  </ImageView>
                   <ImageView fx:id="imvLike11" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/ThumbsUp.png" />
@@ -141,6 +156,11 @@
                   <ImageView fitHeight="442.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Shared/2%20Venta/FProducto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icons/Image.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="imvLike111" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
