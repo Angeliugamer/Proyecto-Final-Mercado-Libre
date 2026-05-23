@@ -22,17 +22,6 @@
             </ImageView>
          </children>
       </Pane>
-          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
-      <Pane prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="7.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../img/Icons/MoonStars.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="btnDarkOff" layoutX="7.0" layoutY="512.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
-         </children>
-      </Pane>
       <Pane prefHeight="200.0" prefWidth="200.0">
          <children>
             <Button layoutX="996.0" layoutY="53.0" mnemonicParsing="false" text="Actualizar" />
@@ -55,6 +44,17 @@
             <TextField layoutX="27.0" layoutY="100.0" prefHeight="25.0" prefWidth="149.0" promptText="Parentaje, ej: Teclado" />
             <TextField layoutX="213.0" layoutY="100.0" promptText="Precio" />
             <TextArea layoutX="577.0" layoutY="18.0" prefHeight="144.0" prefWidth="315.0" promptText="                                    Descripcion" />
+         </children>
+      </Pane>
+          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="7.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Icons/MoonStars.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnDarkOff" layoutX="7.0" layoutY="512.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
          </children>
       </Pane>
    </children>
