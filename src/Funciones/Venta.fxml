@@ -28,7 +28,7 @@
                   <Font name="Montserrat Black" size="18.0" />
                </font>
             </Text>
-            <Text fx:id="TextList" layoutX="34.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text List">
+            <Text fx:id="TextList" layoutX="4.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text List">
                <font>
                   <Font name="Open Sans Medium" size="12.0" />
                </font></Text>
@@ -48,6 +48,7 @@
                         <Image url="@../img/Icons/Image.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="verInfo1" onAction="#verInfo1" prefHeight="441.0" prefWidth="226.0" style="-fx-background-color: transparent;" />
                   <ImageView fx:id="imvLike" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/ThumbsUp.png" />
@@ -58,11 +59,12 @@
                         <Image url="@../img/Icons/ThumbsDown.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="imvCheck" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imvCheck1" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/TagSimple.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="check1" layoutX="189.0" layoutY="193.0" onAction="#toggleCheck1" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: transparent;" />
                   <Label fx:id="txtNombre1" layoutX="17.0" layoutY="240.0" text=" Nombre del producto">
                      <font>
                         <Font name="Open Sans Medium" size="12.0" />
@@ -87,6 +89,7 @@
                         <Image url="@../img/Icons/Image.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="verInfo2" onAction="#verInfo2" prefHeight="441.0" prefWidth="226.0" style="-fx-background-color: transparent;" />
                   <ImageView fx:id="imvLike1" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/ThumbsUp.png" />
@@ -97,11 +100,12 @@
                         <Image url="@../img/Icons/ThumbsDown.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="imvCheck1" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imvCheck2" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/TagSimple.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="check2" layoutX="189.0" layoutY="193.0" onAction="#toggleCheck2" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: transparent;" />
                   <Label fx:id="txtNombre2" layoutX="16.0" layoutY="240.0" text=" Nombre del producto">
                      <font>
                         <Font name="Open Sans Medium" size="12.0" />
@@ -126,6 +130,7 @@
                         <Image url="@../img/Icons/Image.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="verInfo3" onAction="#verInfo3" prefHeight="441.0" prefWidth="226.0" style="-fx-background-color: transparent;" />
                   <ImageView fx:id="imvLike11" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/ThumbsUp.png" />
@@ -136,11 +141,12 @@
                         <Image url="@../img/Icons/ThumbsDown.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="imvCheck11" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imvCheck3" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/TagSimple.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="check3" layoutX="189.0" layoutY="193.0" onAction="#toggleCheck3" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: transparent;" />
                   <Label fx:id="txtNombre3" layoutX="17.0" layoutY="240.0" text=" Nombre del producto">
                      <font>
                         <Font name="Open Sans Medium" size="12.0" />
@@ -165,6 +171,7 @@
                         <Image url="@../img/Icons/Image.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="verInfo4" onAction="#verInfo4" prefHeight="441.0" prefWidth="226.0" style="-fx-background-color: transparent;" />
                   <ImageView fx:id="imvLike111" fitHeight="40.0" fitWidth="34.0" layoutX="5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/ThumbsUp.png" />
@@ -175,11 +182,12 @@
                         <Image url="@../img/Icons/ThumbsDown.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="imvCheck111" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imvCheck4" fitHeight="34.0" fitWidth="34.0" layoutX="188.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/Icons/TagSimple.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="check4" layoutX="189.0" layoutY="193.0" onAction="#toggleCheck4" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: transparent;" />
                   <Label fx:id="txtNombre4" layoutX="17.0" layoutY="240.0" text=" Nombre del producto">
                      <font>
                         <Font name="Open Sans Medium" size="12.0" />
@@ -204,18 +212,16 @@
                </image>
             </ImageView>
             <Button fx:id="RightButt" layoutX="1073.0" layoutY="305.0" onAction="#siguienteProducto" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
-         </children>
-      </Pane>
-      <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
-      <Pane mouseTransparent="true" prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="7.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+            <Button fx:id="verCarrito" layoutX="951.0" layoutY="23.0" onAction="#verCarrito" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btnSalir" layoutX="1044.0" layoutY="18.0" onAction="#salir" prefHeight="53.0" prefWidth="55.0" style="-fx-background-color: transparent;" />
+            <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="4.0" layoutY="515.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/Icons/MoonStars.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnDarkOff" layoutX="7.0" layoutY="512.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btnDarkOff" layoutX="4.0" layoutY="515.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
          </children>
       </Pane>
+      <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
    </children>
 </StackPane>

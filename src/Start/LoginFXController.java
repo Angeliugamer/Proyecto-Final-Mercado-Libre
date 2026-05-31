@@ -14,14 +14,10 @@ import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 
 public class LoginFXController {
-    @FXML
-    private Pane overlay;
-    @FXML
-    private ImageView iconMoon;
-    @FXML
-    private TextField txtUsuario;
-    @FXML
-    private PasswordField txtPassword;
+    @FXML private Pane overlay;
+    @FXML private ImageView iconMoon;
+    @FXML private TextField txtUsuario;
+    @FXML private PasswordField txtPassword;
     @FXML
     private void cambiarModo() {
         if (!ConfiguracionGeneral.modoNoche) {
@@ -47,6 +43,9 @@ public class LoginFXController {
             ));
         }
     }
+    
+    
+    
     @FXML
     private void abrirRegistro() throws Exception {
         Parent root = FXMLLoader.load(
@@ -80,6 +79,7 @@ public class LoginFXController {
             return;
         }
         if (UsuariosData.validar(user, pass)) {
+            ConfiguracionGeneral.usuarioActual = user;
             Parent root = FXMLLoader.load(
                 getClass().getResource("/Funciones/Venta.fxml")
             );

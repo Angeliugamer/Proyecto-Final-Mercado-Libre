@@ -29,12 +29,12 @@
             </ImageView>
             <Pane prefHeight="560.0" prefWidth="1117.0">
                <children>
-                  <Text layoutX="426.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name">
+                  <Text fx:id="txtNombre" layoutX="426.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name">
                      <font>
                         <Font name="Open Sans Medium" size="18.0" />
                      </font>
                   </Text>
-                  <Text layoutX="416.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" x="10.0" y="10.0">
+                  <Text fx:id="txtPrecio" layoutX="416.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" x="10.0" y="10.0">
                      <font>
                         <Font name="Montserrat Black" size="29.0" />
                      </font>
@@ -54,18 +54,15 @@
                         <Font name="Open Sans Medium" size="14.0" />
                      </font>
                   </Text>
-                  <Text layoutX="849.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Unidad">
+                  <Text fx:id="Cantidad" layoutX="849.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Unidad">
                      <font>
                         <Font name="Open Sans Medium" size="14.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-            <Button fx:id="btnDarkOff1" layoutX="782.0" layoutY="151.0" onAction="#cambiarModo" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: transparent;" />
-            <Button fx:id="btnDarkOff11" layoutX="784.0" layoutY="206.0" onAction="#cambiarModo" prefHeight="45.0" prefWidth="254.0" style="-fx-background-color: transparent;" />
          </children>
       </Pane>
-          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
       <Pane prefHeight="200.0" prefWidth="200.0">
          <children>
             <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="1.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
@@ -74,7 +71,26 @@
                </image>
             </ImageView>
             <Button fx:id="btnDarkOff" layoutX="1.0" layoutY="520.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="ComprarAhora" layoutX="783.0" layoutY="151.0" onAction="#comprarAhora" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="AgregarCarrito" layoutX="782.0" layoutY="205.0" onAction="#agregarCarrito" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: transparent;" />
+            <ImageView fitHeight="62.0" fitWidth="47.0" layoutX="53.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icons/CaretCircleLeft.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnVolver" layoutX="56.0" layoutY="122.0" onAction="#volver" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="aumentar" layoutX="911.0" layoutY="250.0" mnemonicParsing="false" onAction="#aumentar" prefHeight="33.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5;" text="+">
+               <font>
+                  <Font name="Montserrat Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="disminuir" layoutX="944.0" layoutY="250.0" mnemonicParsing="false" onAction="#disminuir" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5;" text="-">
+               <font>
+                  <Font name="Montserrat Black" size="16.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
+          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
    </children>
 </StackPane>

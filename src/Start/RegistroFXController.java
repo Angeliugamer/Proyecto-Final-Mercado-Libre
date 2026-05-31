@@ -14,14 +14,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.media.AudioClip;
 
 public class RegistroFXController {
-    @FXML
-    private Pane overlay;
-    @FXML
-    private ImageView iconMoon;
-    @FXML
-    private TextField txtUsuario;
-    @FXML
-    private PasswordField txtPassword;
+    @FXML private Pane overlay;
+    @FXML private ImageView iconMoon;
+    @FXML private TextField txtUsuario;
+    @FXML private PasswordField txtPassword;
     @FXML
     private void cambiarModo() {
         if (!ConfiguracionGeneral.modoNoche) {

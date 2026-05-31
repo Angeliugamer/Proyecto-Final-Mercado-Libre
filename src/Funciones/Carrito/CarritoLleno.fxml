@@ -10,8 +10,7 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Funciones.Carrito.CarritoLlenoController">
    <children>
-          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
-      <Pane prefHeight="386.0" prefWidth="757.0">
+      <Pane mouseTransparent="true" prefHeight="386.0" prefWidth="757.0">
          <children>
             <ImageView fitHeight="560.0" fitWidth="1183.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -20,9 +19,9 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane prefHeight="424.0" prefWidth="599.0">
+      <Pane mouseTransparent="true" prefHeight="424.0" prefWidth="599.0">
          <children>
-            <Pane layoutX="28.0" layoutY="127.0" prefHeight="138.0" prefWidth="710.0">
+            <Pane fx:id="slot1" layoutX="28.0" layoutY="127.0" prefHeight="138.0" prefWidth="710.0">
                <children>
                   <ImageView fitHeight="174.0" fitWidth="710.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -44,19 +43,20 @@
                         <Image url="@../../img/Icons/Trash.png" />
                      </image>
                   </ImageView>
-                  <Text layoutX="160.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product 1">
+                  <Text fx:id="txtNombre1" layoutX="160.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product 1">
                      <font>
                         <Font name="Open Sans Medium" size="14.0" />
                      </font>
                   </Text>
-                  <Text layoutX="619.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pdt 1 Price">
+                  <Text fx:id="txtPrecio1" layoutX="619.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pdt 1 Price">
                      <font>
                         <Font name="Montserrat Black" size="14.0" />
                      </font>
                   </Text>
+                  <Button fx:id="btnEliminar1" layoutX="674.0" layoutY="97.0" onAction="#eliminarProducto1" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
                </children>
             </Pane>
-            <Pane layoutX="27.0" layoutY="262.0" prefHeight="138.0" prefWidth="710.0">
+            <Pane fx:id="slot2" layoutX="27.0" layoutY="262.0" prefHeight="138.0" prefWidth="710.0">
                <children>
                   <ImageView fitHeight="174.0" fitWidth="710.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -78,19 +78,20 @@
                         <Image url="@../../img/Icons/Trash.png" />
                      </image>
                   </ImageView>
-                  <Text layoutX="162.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product 1">
+                  <Text fx:id="txtNombre2" layoutX="162.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product 2">
                      <font>
                         <Font name="Open Sans Medium" size="14.0" />
                      </font>
                   </Text>
-                  <Text layoutX="621.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pdt 1 Price">
+                  <Text fx:id="txtPrecio2" layoutX="621.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pdt 2 Price">
                      <font>
                         <Font name="Montserrat Black" size="14.0" />
                      </font>
                   </Text>
+                  <Button fx:id="btnEliminar2" layoutX="676.0" layoutY="95.0" onAction="#eliminarProducto2" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
                </children>
             </Pane>
-            <Pane layoutX="27.0" layoutY="393.0" prefHeight="138.0" prefWidth="710.0">
+            <Pane fx:id="slot3" layoutX="27.0" layoutY="393.0" prefHeight="138.0" prefWidth="710.0">
                <children>
                   <ImageView fitHeight="174.0" fitWidth="710.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -112,59 +113,87 @@
                         <Image url="@../../img/Icons/Trash.png" />
                      </image>
                   </ImageView>
-                  <Text layoutX="164.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product 1">
+                  <Text fx:id="txtNombre3" layoutX="164.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product 3">
                      <font>
                         <Font name="Open Sans Medium" size="14.0" />
                      </font>
                   </Text>
-                  <Text layoutX="621.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pdt 1 Price">
+                  <Text fx:id="txtPrecio3" layoutX="621.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pdt 3 Price">
                      <font>
                         <Font name="Montserrat Black" size="14.0" />
                      </font>
                   </Text>
+                  <Button fx:id="btnEliminar3" layoutX="676.0" layoutY="99.0" onAction="#eliminarProducto3" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
                </children>
             </Pane>
          </children>
       </Pane>
-      <Pane layoutX="10.0" layoutY="10.0" prefHeight="386.0" prefWidth="757.0">
+      <Pane layoutX="10.0" layoutY="10.0" mouseTransparent="true" prefHeight="386.0" prefWidth="757.0">
          <children>
-            <Pane layoutX="759.0" layoutY="118.0" prefHeight="388.0" prefWidth="340.0">
+            <Pane mouseTransparent="true" prefHeight="560.0" prefWidth="1117.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="305.0" layoutY="529.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/Icons/CaretCircleLeft.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="367.0" layoutY="529.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/Icons/CaretCircleRight.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtPagina" layoutX="340.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 / 1">
+                     <font>
+                        <Font name="Open Sans Medium" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="759.0" layoutY="118.0" mouseTransparent="true" prefHeight="388.0" prefWidth="340.0">
                <children>
                   <ImageView fitHeight="246.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/Shared/4%20Carrito/Product%20confirm%201.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="246.0" fitWidth="340.0" layoutY="131.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="246.0" fitWidth="340.0" layoutY="213.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/Shared/4%20Carrito/Product%20confirm%202.png" />
                      </image>
                   </ImageView>
-                  <Text layoutX="259.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product list" textAlignment="RIGHT">
+                  <Text fx:id="txtListaResumen" layoutX="219.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product list" textAlignment="RIGHT">
                      <font>
                         <Font name="Open Sans Medium" size="12.0" />
                      </font>
                   </Text>
-                  <Text layoutX="241.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products Price" textAlignment="RIGHT">
+                  <Text fx:id="txtTotalResumen" layoutX="237.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products Price" textAlignment="RIGHT">
                      <font>
                         <Font name="Open Sans Medium" size="12.0" />
                      </font>
                   </Text>
-                  <Button fx:id="continuar1" layoutX="16.0" layoutY="165.0" onAction="#cambiarModo" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="continuar1" layoutX="16.0" layoutY="247.0" onAction="#cambiarModo" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: transparent;" />
                </children>
             </Pane>
-            <ImageView fitHeight="169.0" fitWidth="1117.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../img/Shared/2%20Venta/Barra.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="1068.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="1068.0" layoutY="511.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../img/Icons/MoonStars.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnDarkOff" layoutX="1068.0" layoutY="511.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+            <ImageView fitHeight="169.0" fitWidth="1117.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Shared/2%20Venta/Barra.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnDarkOff" layoutX="1068.0" layoutY="511.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btnAnterior" layoutX="305.0" layoutY="529.0" onAction="#paginaAnterior" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btnSiguiente" layoutX="367.0" layoutY="529.0" onAction="#paginaSiguiente" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btnCarrito" layoutX="952.0" layoutY="23.0" onAction="#volverTienda" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
    </children>
 </StackPane>
