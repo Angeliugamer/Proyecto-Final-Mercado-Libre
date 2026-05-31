@@ -1,0 +1,5 @@
+juan|30/05/2026 03:05:27|197888|Targeta Grafica,ram,bici,errrrr,
+juan|30/05/2026 03:08:34|120000|Raton,Teclado,Cpu,
+juan|30/05/2026 04:53:41|285000|Raton,Teclado,Targeta Madre,Targeta Grafica,
+juan|30/05/2026 13:11:16|165000|Raton,Teclado,Targeta Madre,
+juan|30/05/2026 14:20:33|1110000|Raton,Teclado,Targeta Grafica,televisor ,Raton,Teclado,Targeta Madre,Targeta Grafica,

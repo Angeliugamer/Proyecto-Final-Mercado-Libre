@@ -8,3 +8,4 @@
 8;Mouse Pad XL RGB;Alfombrilla gamer grande con iluminación RGB;60000;nop.png
 9;Memoria RAM 16GB RGB;Memoria DDR4 de 16GB con iluminación RGB;280000;nop.png
 10;SSD NVMe 1TB;Unidad de estado sólido de alta velocidad;350000;nop.png
+11;DiscoDuro;DiscoDuro HDD, estado solido;500000;nop

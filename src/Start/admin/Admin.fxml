@@ -13,41 +13,51 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Start.admin.AdminController">
    <children>
-      <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+
+      <!-- FONDO -->
+      <Pane prefHeight="560.0" prefWidth="1117.0">
          <children>
-            <ImageView fitHeight="560.0" fitWidth="1117.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+            <ImageView fitHeight="560.0" fitWidth="1117.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                <image>
                   <Image url="@../../img/Shared/2%20Venta/Fondo.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="1117.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Shared/2%20Venta/Barra.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <Button layoutX="996.0" layoutY="53.0" mnemonicParsing="false" text="Actualizar" />
-            <Button layoutX="1004.0" layoutY="96.0" mnemonicParsing="false" text="Añadir" />
-            <TextField layoutX="956.0" layoutY="159.0" promptText="id:" />
-            <Button layoutX="1000.0" layoutY="193.0" mnemonicParsing="false" text="Eliminar" />
-            <ListView layoutX="52.0" layoutY="180.0" prefHeight="331.0" prefWidth="885.0" />
-         </children>
-      </Pane>
-      <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+
+      <!-- CONTENIDO -->
+      <Pane prefHeight="560.0" prefWidth="1117.0">
          <children>
             <Text layoutX="57.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos para registrar productos">
                <font>
                   <Font name="Open Sans Medium" size="15.0" />
                </font>
             </Text>
-            <TextField layoutX="27.0" layoutY="53.0" prefHeight="25.0" prefWidth="149.0" promptText="id sin espacios" />
-            <TextField layoutX="213.0" layoutY="53.0" promptText=" Nombre a Mostrar" />
-            <TextField layoutX="397.0" layoutY="53.0" promptText="Id imagen del producto" />
-            <TextField layoutX="27.0" layoutY="100.0" prefHeight="25.0" prefWidth="149.0" promptText="Parentaje, ej: Teclado" />
-            <TextField layoutX="213.0" layoutY="100.0" promptText="Precio" />
-            <TextArea layoutX="577.0" layoutY="18.0" prefHeight="144.0" prefWidth="315.0" promptText="                                    Descripcion" />
+            <TextField fx:id="txtId" layoutX="50.0" layoutY="110.0" prefHeight="25.0" prefWidth="149.0" promptText="ID sin espacios" />
+            <TextField fx:id="txtNombre" layoutX="220.0" layoutY="110.0" prefWidth="160.0" promptText="Nombre del producto" />
+            <TextField fx:id="txtImagen" layoutX="397.0" layoutY="110.0" prefWidth="160.0" promptText="Imagen ej: laptop.png" />
+            <TextField fx:id="txtCategoria" layoutX="50.0" layoutY="170.0" prefHeight="25.0" prefWidth="149.0" promptText="Categoría" />
+            <TextField fx:id="txtPrecio" layoutX="220.0" layoutY="170.0" prefWidth="160.0" promptText="Precio" />
+            <TextArea fx:id="txtDescripcion" layoutX="577.0" layoutY="110.0" prefHeight="100.0" prefWidth="315.0" promptText="Descripción del producto" />
+            <ListView fx:id="listaProductos" layoutX="52.0" layoutY="240.0" prefHeight="300.0" prefWidth="885.0" />
+            <Button layoutX="980.0" layoutY="150.0" mnemonicParsing="false" onAction="#initialize" prefWidth="100.0" text="Actualizar" />
+            <Button layoutX="980.0" layoutY="200.0" mnemonicParsing="false" onAction="#agregarProducto" prefWidth="100.0" text="Añadir" />
+            <Button layoutX="980.0" layoutY="250.0" mnemonicParsing="false" onAction="#eliminarProducto" prefWidth="100.0" text="Eliminar" />
+            <Button layoutX="980.0" layoutY="422.0" mnemonicParsing="false" onAction="#verHistorial" prefWidth="100.0" text="Historial" />
+            <Button layoutX="980.0" layoutY="478.0" mnemonicParsing="false" onAction="#salir" prefWidth="100.0" text="Salir" />
          </children>
       </Pane>
-          <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
-      <Pane prefHeight="200.0" prefWidth="200.0">
+
+      <!-- OVERLAY -->
+      <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />
+
+      <!-- MODO OSCURO -->
+      <Pane pickOnBounds="false" prefHeight="200.0" prefWidth="200.0">
          <children>
             <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="7.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -57,5 +67,6 @@
             <Button fx:id="btnDarkOff" layoutX="7.0" layoutY="512.0" onAction="#cambiarModo" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
          </children>
       </Pane>
+
    </children>
 </StackPane>
