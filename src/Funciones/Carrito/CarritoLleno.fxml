@@ -171,7 +171,6 @@
                         <Font name="Open Sans Medium" size="12.0" />
                      </font>
                   </Text>
-                  <Button fx:id="continuar1" layoutX="16.0" layoutY="247.0" onAction="#cambiarModo" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: transparent;" />
                </children>
             </Pane>
             <ImageView fx:id="iconMoon" fitHeight="40.0" fitWidth="42.0" layoutX="1068.0" layoutY="511.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
@@ -197,6 +196,7 @@
                   <Image url="@../../img/Icons/CaretCircleLeft.png" />
                </image>
             </ImageView>
+            <Button fx:id="continuar" layoutX="775.0" layoutY="365.0" onAction="#comprar" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: transparent;" />
          </children>
       </Pane>
           <Pane fx:id="overlay" mouseTransparent="true" opacity="0.0" prefHeight="560.0" prefWidth="1117.0" style="-fx-background-color: black;" />

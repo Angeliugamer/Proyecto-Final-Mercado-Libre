@@ -27,6 +27,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
+import javafx.scene.control.Alert;
+
 public class CarritoLlenoController {
     @FXML private Pane overlay;
     @FXML private ImageView iconMoon;
@@ -229,6 +231,43 @@ public class CarritoLlenoController {
                 carrito.desencolar();
             }
             volverTienda(event);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    
+    
+    @FXML
+    private void comprar(ActionEvent event) {
+        try {
+            List<Productos> productos = carrito.obtenerTodos();
+            double total = 0;
+            for (Productos p : productos) {
+                total += p.getPrecio();
+            }
+            Compra compra = new Compra(
+                ConfiguracionGeneral.usuarioActual,
+                productos,
+                total
+            );
+            ConfiguracionGeneral.historialCompras.apilar(compra);
+
+            try (BufferedWriter bw =
+                    new BufferedWriter(
+                        new FileWriter("compras.txt", true)
+                    )) {
+
+                bw.write(compra.toTexto());
+                bw.newLine();
+            }
+            carrito = new Cola();
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setContentText("Compra realizada correctamente");
+            alert.showAndWait();
+            //System.out.println("Compra registrada");
         } catch (Exception e) {
             e.printStackTrace();
         }
