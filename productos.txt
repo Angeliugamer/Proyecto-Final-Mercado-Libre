@@ -1,11 +1,11 @@
-1;Mouse Gamer RGB;Mouse gamer con iluminación RGB y 7 botones programables;45000;nop.png
-2;Teclado Mecánico Gamer;Teclado mecánico con retroiluminación RGB y switches azules;120000;nop.png
-3;Audífonos Gamer;Audífonos con micrófono y sonido envolvente;85000;nop.png
-4;Monitor Gamer 144Hz;Monitor Full HD de 24 pulgadas y 144Hz;650000;nop.png
-5;Tarjeta Gráfica RTX 4060;Tarjeta gráfica para gaming de alto rendimiento;1800000;nop.png
-6;Procesador Ryzen 7;Procesador de 8 núcleos para juegos y multitarea;1200000;nop.png
-7;Silla Gamer;Silla ergonómica con soporte lumbar;550000;nop.png
-8;Mouse Pad XL RGB;Alfombrilla gamer grande con iluminación RGB;60000;nop.png
-9;Memoria RAM 16GB RGB;Memoria DDR4 de 16GB con iluminación RGB;280000;nop.png
-10;SSD NVMe 1TB;Unidad de estado sólido de alta velocidad;350000;nop.png
-11;DiscoDuro;DiscoDuro HDD, estado solido;500000;nop
+1;Mouse Gamer RGB;Mouse gamer con iluminación RGB y 7 botones programables;45000;Mouse Gamer RGB.png
+2;Teclado Mecánico Gamer;Teclado mecánico con retroiluminación RGB y switches azules;120000;Teclado Mecánico Gamer.png
+3;Audífonos Gamer;Audífonos con micrófono y sonido envolvente;85000;Audífonos Gamer.png
+4;Monitor Gamer 144Hz;Monitor Full HD de 24 pulgadas y 144Hz;650000;Monitor Gamer.png
+5;Tarjeta Gráfica RTX 4060;Tarjeta gráfica para gaming de alto rendimiento;1800000;Tarjeta Gráfica RTX 4060.png
+6;Procesador Ryzen 7;Procesador de 8 núcleos para juegos y multitarea;1200000;Procesador Ryzen 7.png
+7;Silla Gamer;Silla ergonómica con soporte lumbar;550000;Silla Gamer.png
+8;Mouse Pad XL RGB;Alfombrilla gamer grande con iluminación RGB;60000;Mouse Pad XL RGB.png
+9;Memoria RAM 16GB RGB;Memoria DDR4 de 16GB con iluminación RGB;280000;Memoria RAM 16GB RGB.png
+10;SSD NVMe 1TB;Unidad de estado sólido de alta velocidad;3500000;SSD NVMe 1TB.png
+11;Disco Duro 1TB;Disco Duro HDD de una Terabite;500000;HDD 1TB.png
