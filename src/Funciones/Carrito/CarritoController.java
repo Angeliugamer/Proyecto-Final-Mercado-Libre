@@ -43,14 +43,6 @@ public class CarritoController {
     }
     @FXML
     public void initialize() {
-        Button btnVolver = new Button("VOLVER TEST");
-        btnVolver.setLayoutX(20);
-        btnVolver.setLayoutY(510);
-        btnVolver.setOnAction(e -> {
-            System.out.println("BOTON PROGRAMATICO PRESIONADO");
-        });
-        mainPane.getChildren().add(btnVolver);
-    
         if (ConfiguracionGeneral.modoNoche) {
             overlay.setOpacity(0.3);
             iconMoon.setImage(new Image(
@@ -71,7 +63,7 @@ public class CarritoController {
     }
     private void mostrarCarrito() {
         if (carrito == null || carrito.estaVacia()) {
-           txtMensaje.setText("No hay productos en el carrito");
+           //txtMensaje.setText("No hay productos en el carrito");
            return;
         }
         List<Productos> lista = carrito.obtenerTodos();
@@ -94,7 +86,7 @@ public class CarritoController {
     }
     @FXML
     private void continuarCompra(ActionEvent event) {
-        System.out.println("BOTON PRESIONADO");
+        //System.out.println("BOTON PRESIONADO");
         try {
             FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("/Funciones/Venta.fxml")

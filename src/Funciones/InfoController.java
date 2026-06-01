@@ -19,9 +19,11 @@ import Funciones.VentaController;
 public class InfoController{
     @FXML private Pane overlay;
     @FXML private ImageView iconMoon;
+    @FXML private ImageView img;
     @FXML private Text txtNombre;
     @FXML private Text txtPrecio;
     @FXML private Text Cantidad;
+    @FXML private Text txtDescripcion;
 
     private Productos producto;
     private Cola carrito = ConfiguracionGeneral.carritoGlobal;
@@ -76,6 +78,15 @@ public class InfoController{
         this.producto = producto;
         txtNombre.setText(producto.getNombre());
         txtPrecio.setText(String.format("$%,.0f", producto.getPrecio()));
+        txtDescripcion.setText(producto.getDescripcion());
+        
+        Image imagenProducto  = new Image(
+            getClass().getResourceAsStream(
+                "/img/productos/" + producto.getImagen()
+            )
+        );
+
+        img.setImage(imagenProducto );
     }
     public void setCarrito(Cola carrito) {
         this.carrito = carrito;

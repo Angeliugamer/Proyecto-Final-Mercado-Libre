@@ -17,7 +17,7 @@
                   <Image url="@../img/Shared/3%20Poduct%20Info/Fondo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="285.0" fitWidth="285.0" layoutX="92.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img" fitHeight="285.0" fitWidth="285.0" layoutX="92.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/Icons/Image.png" />
                </image>
@@ -39,14 +39,9 @@
                         <Font name="Montserrat Black" size="29.0" />
                      </font>
                   </Text>
-                  <Text layoutX="427.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color: ">
+                  <Text fx:id="txtDescripcion" layoutX="427.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion:" wrappingWidth="300.0">
                      <font>
                         <Font name="Open Sans Medium" size="14.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="472.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----">
-                     <font>
-                        <Font name="Montserrat Black" size="14.0" />
                      </font>
                   </Text>
                   <Text layoutX="783.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad:">
